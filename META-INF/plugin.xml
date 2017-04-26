@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <key>@PLUGIN_KEY@</key>
+    <version>@PLUGIN_VERSION@</version>
+    <label>@PLUGIN_KEY@</label>
+    <description>CHANGE_THIS: This plugin is a trivial sample that can be used as a base for developing proper plugins.</description>
+
+    <!-- If the plugin has a configure page, declare it here.  This will show up as a Configure link for this plugin on the Plugins page. 
+    <configure>configure.xml</configure>
+    -->
+    
+    <!-- If the plugin has a help page, declare it here.  This will show up as a Help link for this plugin on the Plugins page. -->
+    <help>help.xml</help>
+    
+    <!-- Plugin author information. -->
+    <author>L. Rochette</author>
+    <authorUrl/>
+    
+    <commander-version min="3.6"/>
+    
+    <!-- Specify a category for this plugin; this is used in filtered lists in the Plugin Manager.
+         Typically, it is set to System or Step.
+     -->
+    <category>ParameterPanel</category>
+    <customTypes>
+       <customType name="cascade">
+          <parameterPanel>
+             <!--customType name concatenated with "ParameterPanel" must be the gwt module name. -->
+             <javascript>war/ecplugins.cascadeParameterPanel.cascadeParameterPanel/ecplugins.cascadeParameterPanel.cascadeParameterPanel.nocache.js</javascript>
+             <help>/commander/pages/@PLUGIN_NAME@/help</help>
+           </parameterPanel>
+        </customType>
+    </customTypes>
+</plugin>
