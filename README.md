@@ -19,6 +19,7 @@ Quick Installation
 * Create your .classpath file based on the provided sample-classpath file
 * Modify the build.xml to point to the right SDK directory
 * Build the project under eclipse or with ant.
+  * For demo purpose, the ready to use plugin is available at the top level
 * Deploy the plugin to Commander via eclipse
 * Install the DSL file to create the procedure that will invoke the parameter panel
   * ectool evalDsl --dslFile project.groovy
